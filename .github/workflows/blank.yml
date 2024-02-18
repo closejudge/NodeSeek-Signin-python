@@ -6,7 +6,7 @@ on:
       - main  # 在 main 分支上进行推送时触发
   schedule:
     - cron: '0 17 * * *'  # 每天凌晨 1 点执行
-  workflow_dispatch:
+  workflow_dispatch: #添加手动触发方式 便于调试
 
 jobs:
   run-nodeseek-sign:
